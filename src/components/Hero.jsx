@@ -8,8 +8,7 @@ export default function Hero() {
           {siteConfig.tagline}
         </h1>
         <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-          We work directly with owners. No brokers in the middle, no corporate bureaucracy,
-          no pressure. If you've built something worth holding, let's talk.
+          We work with owners and brokers alike. If the business is right, we move fast and we close.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center mb-10">
           <a

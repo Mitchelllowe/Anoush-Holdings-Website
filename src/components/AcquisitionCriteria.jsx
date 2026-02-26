@@ -14,7 +14,7 @@ const idealFit = [
 const notAFit = [
   'Pre-revenue or early-stage startups',
   'Distressed or turnaround situations',
-  'Real estate or heavily asset-intensive businesses',
+  'Businesses where the primary value is in the underlying real estate rather than operating cash flow',
   'Highly regulated industries (cannabis, firearms, etc.)',
   'Top 5 customers represent more than 50% of revenue',
   'Businesses primarily dependent on new construction activity',
