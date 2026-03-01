@@ -35,7 +35,7 @@ export const siteConfig = {
     {
       name: 'Art Avedisian',
       title: 'Co-Founder and Limited Partner',
-      photo: null,
+      photo: '/art-avedisian.jpg',
       linkedin: 'https://www.linkedin.com/in/art-avedisian-4033851/',
       email: 'aavedisian@anoushholdings.com',
       bio: [
