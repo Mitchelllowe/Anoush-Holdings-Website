@@ -10,12 +10,13 @@ export default function Footer() {
             <p className="text-sm">{siteConfig.tagline}</p>
           </div>
           <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-            <a href="#thesis"   className="hover:text-white transition-colors">Thesis</a>
-            <a href="#criteria" className="hover:text-white transition-colors">Criteria</a>
-            <a href="#process"  className="hover:text-white transition-colors">Process</a>
-            <a href="#values"   className="hover:text-white transition-colors">Values</a>
-            <a href="#faq"      className="hover:text-white transition-colors">FAQ</a>
-            <a href="#contact"  className="hover:text-white transition-colors">Contact</a>
+            <a href="#sellers"   className="hover:text-white transition-colors">Selling?</a>
+            <a href="#brokers"   className="hover:text-white transition-colors">Brokers</a>
+            <a href="#investors" className="hover:text-white transition-colors">Investors</a>
+            <a href="#network"   className="hover:text-white transition-colors">Network</a>
+            <a href="#team"      className="hover:text-white transition-colors">Team</a>
+            <a href="#faq"       className="hover:text-white transition-colors">FAQ</a>
+            <a href="#contact"   className="hover:text-white transition-colors">Contact</a>
           </nav>
         </div>
 

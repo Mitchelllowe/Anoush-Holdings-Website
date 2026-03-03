@@ -1,22 +1,55 @@
 // Edit these constants to configure the site.
+// QUICK EDIT GUIDE — no need to open Claude Code for text changes:
+//   hero.headline / hero.subhead  — the big opening statement
+//   fundI.*                       — track record stats and description
+//   network.body                  — the "for friends & family" paragraphs
+//   ebitdaRange                   — shown in criteria and contact form
+//   team[].bio                    — founder bios (array of paragraphs)
+
 export const siteConfig = {
   brand: 'Anoush Holdings',
-  tagline: 'We Buy and Operate Great Businesses',
+  tagline: 'We Acquire and Operate Great Businesses',
   email: 'mlowe@anoushholdings.com',
   linkedin: 'https://www.linkedin.com/in/mitch-b-lowe/',
 
-  // Displayed in the Acquisition Criteria section
-  geographies: ['Continental United States'],
-  ebitdaRange: '$1M – $3M',
+  // ─── Hero ────────────────────────────────────────────────────────────────
+  hero: {
+    headline: 'We buy and operate great small businesses.',
+    subhead:
+      "Anoush Holdings is a founder-led acquisition company. We've returned capital to investors, and we're actively looking for our next acquisition — a cash-flowing business in services, manufacturing, or trades whose owner is ready for the right next chapter.",
+  },
 
-  // Dropdown options in the contact form
+  // ─── Track Record ────────────────────────────────────────────────────────
+  fundI: {
+    multiple: '3.5x',
+    timeframe: '~3.5 yrs',
+    lpReturn: '100%',
+    description:
+      'Anoush Holdings started as a real estate holding company. We raised capital from a network of investors, deployed it, managed assets directly, and returned the fund — with a 3.5x multiple — in roughly three and a half years. Full capital return and distributions to all LPs.',
+    followOn:
+      "We're applying that same discipline to operating businesses — with the same emphasis on finding the right opportunity, structuring it well, and being accountable for outcomes.",
+  },
+
+  // ─── For Friends & Family ────────────────────────────────────────────────
+  network: {
+    body: [
+      "If you've known us for a while, here's the plain-English version of what we're doing: we're trying to acquire a profitable small business — something like $5–$20M in annual revenue in services, manufacturing, or trades. The kind of owner who's thinking about retirement, not distress. Mitch will buy it and step in as the operating owner.",
+      "We returned 3.5x to investors in our first fund. Now we're doing the same with an operating business. If either of the below sounds like someone you know, an introduction would mean a lot.",
+    ],
+  },
+
+  // ─── Acquisition Criteria ────────────────────────────────────────────────
+  geographies: ['Continental United States'],
+  ebitdaRange: '$750K – $2.5M',
+
   ebitdaRangeOptions: [
-    'Under $1M',
-    '$1M – $2M',
-    '$2M – $3M',
-    '$3M+',
+    'Under $750K',
+    '$750K – $1.5M',
+    '$1.5M – $2.5M',
+    '$2.5M+',
   ],
 
+  // ─── Team ────────────────────────────────────────────────────────────────
   team: [
     {
       name: 'Mitch Lowe',
@@ -41,7 +74,7 @@ export const siteConfig = {
       bio: [
         'Art Avedisian is the Co-Founder and Limited Partner of Anoush Holdings. He brings more than three decades of experience building, leading, and scaling businesses across healthcare technology, financial services, and aerospace and defense.',
         'Art began his career in medical device product development at Welch Allyn before taking the helm as President of Cowley Associates, a boutique advertising and public relations firm. He went on to co-found LifeLink Monitoring, serving as President and CEO, where he built the company from the ground up into a remote patient monitoring service provider that focused on at-risk, chronically ill patients. That experience gave him a deep understanding of what it takes to operate a technology business through every stage of growth.',
-        'He later founded and led Cygma Corp, a subsidiary of Chatham Financial, one of the largest independent financial risk advisory firms in the world, where he built out the derivatives business across Latin America and other developing markets. His work there sharpened his expertise in deal structuring, capital markets, and operating in complex environments. Most recently, Art served as EVP of Strategic Initiatives at C Speed where he led the development of the company\'s persistent airborne surveillance business and ultimately, C Speed\'s sale to NewSpring Holdings.',
+        "He later founded and led Cygma Corp, a subsidiary of Chatham Financial, one of the largest independent financial risk advisory firms in the world, where he built out the derivatives business across Latin America and other developing markets. His work there sharpened his expertise in deal structuring, capital markets, and operating in complex environments. Most recently, Art served as EVP of Strategic Initiatives at C Speed where he led the development of the company's persistent airborne surveillance business and ultimately, C Speed's sale to NewSpring Holdings.",
         'Outside of his professional career, Art is a private pilot and serves on the board of ServingLeaders Ministries, reflecting a long-standing commitment to faith, service, and community.',
         'Art lives in Kennett Square, PA with his wife Tina and their six children.',
       ],

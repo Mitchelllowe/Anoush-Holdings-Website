@@ -1,5 +1,14 @@
 const chips = [
   {
+    label: '3.5x Fund I Return',
+    featured: true,
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      </svg>
+    ),
+  },
+  {
     label: 'Veteran-led',
     icon: (
       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,12 +55,16 @@ export default function CredibilityStrip() {
   return (
     <div className="bg-slate-50 border-y border-slate-200 py-8 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3">
-        {chips.map(({ label, icon }) => (
+        {chips.map(({ label, icon, featured }) => (
           <div
             key={label}
-            className="flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 text-sm font-medium text-slate-700 shadow-sm"
+            className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium shadow-sm ${
+              featured
+                ? 'bg-blue-600 text-white border border-blue-600'
+                : 'bg-white border border-slate-200 text-slate-700'
+            }`}
           >
-            <span className="text-blue-600">{icon}</span>
+            <span className={featured ? 'text-white' : 'text-blue-600'}>{icon}</span>
             {label}
           </div>
         ))}

@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
 import { siteConfig } from '../site.config'
 
+// To edit nav links: update the links array below.
+
 const links = [
-  { label: 'Thesis',   href: '#thesis' },
-  { label: 'Criteria', href: '#criteria' },
-  { label: 'Process',  href: '#process' },
-  { label: 'Values',   href: '#values' },
-  { label: 'FAQ',      href: '#faq' },
-  { label: 'Contact',  href: '#contact' },
+  { label: 'Selling?',  href: '#sellers' },
+  { label: 'Brokers',   href: '#brokers' },
+  { label: 'Investors', href: '#investors' },
+  { label: 'Team',      href: '#team' },
+  { label: 'FAQ',       href: '#faq' },
+  { label: 'Contact',   href: '#contact' },
 ]
 
 export default function Nav() {
@@ -49,7 +51,7 @@ export default function Nav() {
           href="#contact"
           className="hidden md:inline-block bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
         >
-          Submit a Deal
+          Get in Touch
         </a>
 
         {/* Mobile hamburger */}
@@ -92,7 +94,7 @@ export default function Nav() {
             className="mt-4 block text-center bg-blue-600 text-white text-sm font-medium px-4 py-2.5 rounded-lg hover:bg-blue-700 transition-colors"
             onClick={() => setOpen(false)}
           >
-            Submit a Deal
+            Get in Touch
           </a>
         </div>
       )}

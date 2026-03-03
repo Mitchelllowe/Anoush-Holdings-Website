@@ -1,9 +1,12 @@
 import { useState } from 'react'
 
+// To add/edit questions: update the faqs array below.
+
 const faqs = [
+  // ── Sellers & Brokers ──────────────────────────────────────────────────
   {
     q: 'How are you financing acquisitions?',
-    a: 'Acquisitions are structured with a combination of equity from a network of private investors and debt financing through SBA lenders. We have had direct conversations with SBA lenders who have qualified us for deals within our target criteria, so we are not starting from scratch when a deal comes together. Every transaction is structured deal by deal, and we are straightforward about that from the start.',
+    a: "Acquisitions are structured with a combination of equity from our investor network and debt financing. We've had direct conversations with both SBA lenders and cash-flow lenders and have pre-qualification in place, so we're not starting from scratch when a deal comes together. Every transaction is structured deal by deal, and we're straightforward about that from the start.",
   },
   {
     q: 'Are you a real buyer or a broker?',
@@ -19,7 +22,7 @@ const faqs = [
   },
   {
     q: 'How do you handle confidentiality?',
-    a: 'We take confidentiality seriously. We sign a mutual NDA early in the process and do not share any information about your business with third parties without your explicit permission. We also avoid contacting your employees or customers without your prior approval.',
+    a: "We take confidentiality seriously. We sign a mutual NDA early in the process and do not share any information about your business with third parties without your explicit permission. We also avoid contacting your employees or customers without your prior approval.",
   },
   {
     q: 'How long does the process typically take?',
@@ -28,6 +31,26 @@ const faqs = [
   {
     q: "What if I'm not ready to sell yet?",
     a: "That's completely fine. Many of our best conversations happen with owners who are 12–24 months out from a transition. Getting to know each other early makes the eventual process much smoother. Reach out whenever you're ready to start a conversation.",
+  },
+
+  // ── Investors ──────────────────────────────────────────────────────────
+  {
+    q: 'How is Fund II structured?',
+    a: "Fund II operates as a fundless sponsor — investors co-invest deal-by-deal in a specific, identified acquisition rather than committing to a blind pool. You see the business before you commit capital.",
+  },
+  {
+    q: 'Is there a management fee?',
+    a: "No. There is no management fee of any kind — not on committed capital, not on invested capital. We earn our return when you earn yours.",
+  },
+  {
+    q: 'Who can participate in Fund II?',
+    a: "Fund II is open to accredited investors. We are selective about who we bring on as LPs — we are looking for aligned, patient partners, not passive capital. Reach out to start a conversation.",
+  },
+
+  // ── Network ────────────────────────────────────────────────────────────
+  {
+    q: "I know someone who might be a good fit — how should I make an introduction?",
+    a: "The easiest way is to cc both parties on an email, or just send a note to mlowe@anoushholdings.com with a brief description of who you're connecting us with. We'll take it from there and make it easy on everyone.",
   },
 ]
 

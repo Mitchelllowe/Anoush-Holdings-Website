@@ -1,12 +1,38 @@
 import { siteConfig } from '../site.config'
 
+// To edit criteria lists: update idealFit / notAFit arrays below.
+// To edit broker commitment cards: update the commitments array below.
+// EBITDA range and geography pull from site.config.js.
+
+const commitments = [
+  {
+    title: 'We close.',
+    description:
+      "When we issue an LOI, we mean it. We don't retrade offers at the finish line or string sellers along through diligence.",
+  },
+  {
+    title: "We're financed.",
+    description:
+      "We've had direct conversations with SBA lenders and cash-flow lenders and have pre-qualification in place. We're not starting from scratch when a deal comes together.",
+  },
+  {
+    title: 'We respect your process.',
+    description:
+      "We sign NDAs early and don't go around your client. Your relationship is yours. We don't shop deals to other buyers.",
+  },
+  {
+    title: 'We move fast.',
+    description:
+      'LOI in 2–4 weeks. Diligence in 30–60 days. We aim to minimize disruption to daily operations.',
+  },
+]
+
 const idealFit = [
-  '$1M–$3M in EBITDA',
+  '$750K–$2.5M in EBITDA',
   'Established for 5+ years with a stable customer base',
   'Owner-operated with a reliable team in place',
   'Based in the continental US',
-  'Recurring or repeat revenue base with predictable cash flow',
-  'A path to growth and an energized team ready to run with it',
+  'Recurring or repeat revenue with predictable cash flow',
   'Clean books, or at least explainable ones',
   'Owner ready for a transition within 6–18 months',
 ]
@@ -14,7 +40,7 @@ const idealFit = [
 const notAFit = [
   'Pre-revenue or early-stage startups',
   'Distressed or turnaround situations',
-  'Businesses where the primary value is in the underlying real estate rather than operating cash flow',
+  'Businesses where value is primarily in underlying real estate',
   'Highly regulated industries (cannabis, firearms, etc.)',
   'Top 5 customers represent more than 50% of revenue',
   'Businesses primarily dependent on new construction activity',
@@ -23,30 +49,45 @@ const notAFit = [
 
 export default function AcquisitionCriteria() {
   const ranges = [
-    { label: 'Geography', value: siteConfig.geographies.join(', ') },
-    { label: 'EBITDA',    value: siteConfig.ebitdaRange },
+    { label: 'Geography',  value: siteConfig.geographies.join(', ') },
+    { label: 'EBITDA',     value: siteConfig.ebitdaRange },
+    { label: 'Industries', value: 'Services · Light manufacturing · Specialty distribution · Trades' },
   ]
 
   return (
-    <section id="criteria" className="py-20 px-4 sm:px-6 bg-slate-50">
+    <section id="brokers" className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">Acquisition Criteria</p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-10">
-          What we're looking for.
+        <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">For Brokers</p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          We close. No games, no retrades.
         </h2>
+        <p className="text-slate-600 text-lg mb-12 max-w-2xl">
+          Your reputation is on the line every time you bring a buyer to a seller. Here's what you
+          can count on from us.
+        </p>
 
-        {/* Range pills */}
-        <div className="flex flex-wrap gap-4 mb-10">
-          {ranges.map(({ label, value }) => (
-            <div key={label} className="bg-white border border-slate-200 rounded-lg px-5 py-3 shadow-sm">
-              <p className="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">{label}</p>
-              <p className="text-slate-900 font-semibold">{value}</p>
+        {/* Broker commitments */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+          {commitments.map(({ title, description }) => (
+            <div key={title} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
+              <h3 className="font-semibold text-slate-900 mb-2">{title}</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">{description}</p>
             </div>
           ))}
         </div>
 
+        {/* Range pills */}
+        <div className="flex flex-wrap gap-4 mb-10">
+          {ranges.map(({ label, value }) => (
+            <div key={label} className="bg-slate-50 border border-slate-200 rounded-lg px-5 py-3">
+              <p className="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">{label}</p>
+              <p className="text-slate-900 font-semibold text-sm">{value}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Ideal fit / not a fit */}
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Ideal Fit */}
           <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-5">
               <span className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
@@ -66,7 +107,6 @@ export default function AcquisitionCriteria() {
             </ul>
           </div>
 
-          {/* Not a Fit */}
           <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-5">
               <span className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center">
@@ -85,6 +125,15 @@ export default function AcquisitionCriteria() {
               ))}
             </ul>
           </div>
+        </div>
+
+        <div className="mt-10">
+          <a
+            href="#contact"
+            className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Submit a Deal →
+          </a>
         </div>
       </div>
     </section>

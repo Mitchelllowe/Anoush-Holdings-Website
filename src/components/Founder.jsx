@@ -67,7 +67,7 @@ function TeamMember({ member }) {
 
 export default function Founder() {
   return (
-    <section className="py-20 px-4 sm:px-6 bg-white">
+    <section id="team" className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">The Team</p>
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-12">

@@ -1,14 +1,22 @@
 import { useState } from 'react'
 import { siteConfig } from '../site.config'
 
-const empty = {
-  name: '',
-  email: '',
-  company: '',
-  location: '',
-  ebitda: '',
-  notes: '',
+const contactTypes = [
+  { value: 'seller',       label: "I'm a business owner thinking about selling" },
+  { value: 'broker',       label: "I'm a broker with a deal to discuss" },
+  { value: 'investor',     label: "I'm interested in learning about Fund II" },
+  { value: 'introduction', label: "I'd like to make an introduction" },
+]
+
+const notesPlaceholder = {
+  seller:       'Tell us about your business — industry, years in operation, reason for considering a sale, anything else relevant…',
+  broker:       'Brief deal overview — industry, revenue range, location, seller situation, your timeline…',
+  investor:     'Tell us a bit about yourself and your investment background. No pitch deck needed — just a conversation.',
+  introduction: 'Who are you connecting us with, and why do you think there might be a fit?',
+  '':           'Tell us whatever feels relevant…',
 }
+
+const empty = { type: '', name: '', email: '', company: '', location: '', ebitda: '', notes: '' }
 
 function validate(data) {
   const errors = {}
@@ -81,15 +89,15 @@ export default function ContactForm() {
     }
   }
 
+  const showBizFields = form.type === 'seller' || form.type === 'broker'
+
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-2xl mx-auto">
         <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">Contact</p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
-          Submit a deal or reach out.
-        </h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Get in touch.</h2>
         <p className="text-slate-600 mb-10">
-          All information is kept strictly confidential. You can also email us directly at{' '}
+          All information is kept strictly confidential. You can also reach us directly at{' '}
           <a href={`mailto:${siteConfig.email}`} className="text-blue-600 hover:underline">
             {siteConfig.email}
           </a>
@@ -104,12 +112,27 @@ export default function ContactForm() {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">We got it. Thank you.</h3>
-            <p className="text-slate-600">
-              We look forward to learning more about your business.
-            </p>
+            <p className="text-slate-600">We'll be in touch shortly.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} noValidate className="space-y-5">
+
+            {/* Audience selector */}
+            <Field label="I'm reaching out as a…" id="type">
+              <select
+                id="type"
+                name="type"
+                value={form.type}
+                onChange={handleChange}
+                className={inputClass(false)}
+              >
+                <option value="">Select one…</option>
+                {contactTypes.map(({ value, label }) => (
+                  <option key={value} value={value}>{label}</option>
+                ))}
+              </select>
+            </Field>
+
             <div className="grid sm:grid-cols-2 gap-5">
               <Field label="Your Name *" id="name" error={errors.name}>
                 <input
@@ -135,54 +158,58 @@ export default function ContactForm() {
               </Field>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-5">
-              <Field label="Business Name" id="company" error={errors.company}>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  value={form.company}
-                  onChange={handleChange}
-                  placeholder="Acme Industries"
-                  className={inputClass(!!errors.company)}
-                />
-              </Field>
-              <Field label="Location (City, State)" id="location">
-                <input
-                  type="text"
-                  id="location"
-                  name="location"
-                  value={form.location}
-                  onChange={handleChange}
-                  placeholder="Phoenix, AZ"
-                  className={inputClass(false)}
-                />
-              </Field>
-            </div>
+            {/* Business fields — sellers and brokers only */}
+            {showBizFields && (
+              <>
+                <div className="grid sm:grid-cols-2 gap-5">
+                  <Field label="Business Name" id="company">
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={form.company}
+                      onChange={handleChange}
+                      placeholder="Acme Industries"
+                      className={inputClass(false)}
+                    />
+                  </Field>
+                  <Field label="Location (City, State)" id="location">
+                    <input
+                      type="text"
+                      id="location"
+                      name="location"
+                      value={form.location}
+                      onChange={handleChange}
+                      placeholder="Phoenix, AZ"
+                      className={inputClass(false)}
+                    />
+                  </Field>
+                </div>
+                <Field label="EBITDA (approx.)" id="ebitda">
+                  <select
+                    id="ebitda"
+                    name="ebitda"
+                    value={form.ebitda}
+                    onChange={handleChange}
+                    className={inputClass(false)}
+                  >
+                    <option value="">Select a range</option>
+                    {siteConfig.ebitdaRangeOptions.map((r) => (
+                      <option key={r} value={r}>{r}</option>
+                    ))}
+                  </select>
+                </Field>
+              </>
+            )}
 
-            <Field label="EBITDA (approx.)" id="ebitda">
-              <select
-                id="ebitda"
-                name="ebitda"
-                value={form.ebitda}
-                onChange={handleChange}
-                className={inputClass(false)}
-              >
-                <option value="">Select a range</option>
-                {siteConfig.ebitdaRangeOptions.map((r) => (
-                  <option key={r} value={r}>{r}</option>
-                ))}
-              </select>
-            </Field>
-
-            <Field label="Tell us about the business" id="notes">
+            <Field label="Tell us more" id="notes">
               <textarea
                 id="notes"
                 name="notes"
                 value={form.notes}
                 onChange={handleChange}
                 rows={5}
-                placeholder="Industry, years in business, reason for selling, anything else you'd like us to know..."
+                placeholder={notesPlaceholder[form.type]}
                 className={inputClass(false)}
               />
             </Field>
@@ -193,12 +220,13 @@ export default function ContactForm() {
                 <a href={`mailto:${siteConfig.email}`} className="underline">{siteConfig.email}</a>.
               </p>
             )}
+
             <button
               type="submit"
               disabled={submitting}
               className="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {submitting ? 'Sending...' : 'Submit'}
+              {submitting ? 'Sending…' : 'Send Message'}
             </button>
           </form>
         )}
