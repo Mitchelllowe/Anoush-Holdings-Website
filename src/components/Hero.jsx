@@ -2,9 +2,7 @@ import { siteConfig } from '../site.config'
 
 // To edit headline/subhead: update siteConfig.hero in site.config.js
 
-const audienceLinks = [
-  { label: 'Selling Your Business?', href: '#sellers' },
-]
+const audienceLinks = []
 
 export default function Hero() {
   return (
@@ -17,20 +15,7 @@ export default function Hero() {
           {siteConfig.hero.subhead}
         </p>
 
-        {/* Audience routing */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {audienceLinks.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              className="inline-block bg-white/10 border border-white/20 text-white font-medium px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors text-sm"
-            >
-              {label}
-            </a>
-          ))}
-        </div>
-
-        <a
+<a
           href="#contact"
           className="inline-block bg-blue-600 text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-blue-700 transition-colors"
         >
