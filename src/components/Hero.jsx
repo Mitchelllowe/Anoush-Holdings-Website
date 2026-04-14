@@ -2,8 +2,6 @@ import { siteConfig } from '../site.config'
 
 // To edit headline/subhead: update siteConfig.hero in site.config.js
 
-const audienceLinks = []
-
 export default function Hero() {
   return (
     <section className="bg-slate-900 text-white pt-32 pb-24 px-4 sm:px-6">
@@ -14,8 +12,7 @@ export default function Hero() {
         <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
           {siteConfig.hero.subhead}
         </p>
-
-<a
+        <a
           href="#contact"
           className="inline-block bg-blue-600 text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-blue-700 transition-colors"
         >
