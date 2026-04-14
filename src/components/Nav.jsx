@@ -4,9 +4,8 @@ import { siteConfig } from '../site.config'
 // To edit nav links: update the links array below.
 
 const links = [
-  { label: 'Selling?',  href: '#sellers' },
-  { label: 'Brokers',   href: '#brokers' },
-  { label: 'Team',      href: '#team' },
+  { label: 'Selling?', href: '#sellers' },
+  { label: 'Team',     href: '#team' },
   { label: 'FAQ',       href: '#faq' },
   { label: 'Contact',   href: '#contact' },
 ]

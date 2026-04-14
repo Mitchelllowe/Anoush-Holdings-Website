@@ -4,9 +4,7 @@ import CredibilityStrip from './components/CredibilityStrip'
 import TrackRecord from './components/TrackRecord'
 import Thesis from './components/Thesis'
 import WhySellToUs from './components/WhySellToUs'
-import AcquisitionCriteria from './components/AcquisitionCriteria'
 import Process from './components/Process'
-import ForNetwork from './components/ForNetwork'
 import Founder from './components/Founder'
 import FAQ from './components/FAQ'
 import CTABand from './components/CTABand'
@@ -23,9 +21,7 @@ export default function App() {
         <TrackRecord />
         <Thesis />          {/* For Sellers — #sellers */}
         <WhySellToUs />     {/* Seller value props — flows from Thesis */}
-        <AcquisitionCriteria /> {/* For Brokers — #brokers */}
         <Process />
-        <ForNetwork />      {/* For Friends & Family — #network */}
         <Founder />         {/* Team — #team */}
         <FAQ />
         <CTABand />

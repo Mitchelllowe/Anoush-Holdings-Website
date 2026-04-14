@@ -4,8 +4,6 @@ import { siteConfig } from '../site.config'
 
 const audienceLinks = [
   { label: 'Selling Your Business?', href: '#sellers' },
-  { label: 'Working as a Broker?',   href: '#brokers' },
-  { label: 'Know Us Personally?',    href: '#network' },
 ]
 
 export default function Hero() {
