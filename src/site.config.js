@@ -16,7 +16,7 @@ export const siteConfig = {
   hero: {
     headline: 'We buy and operate great small businesses.',
     subhead:
-      "Anoush Holdings is a founder-led acquisition company. We've returned capital to investors, and we're actively looking for our next acquisition — a cash-flowing business in services, manufacturing, or trades whose owner is ready for the right next chapter.",
+      "Anoush Holdings is a values-driven acquisition company. We buy and operate great small businesses — and we're looking for our next one: a cash-flowing business in services, manufacturing, or trades whose owner is ready for a buyer who will run it right.",
   },
 
   // ─── Track Record ────────────────────────────────────────────────────────

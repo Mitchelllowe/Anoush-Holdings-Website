@@ -3,10 +3,9 @@ import { siteConfig } from '../site.config'
 // To edit headline/subhead: update siteConfig.hero in site.config.js
 
 const audienceLinks = [
-  { label: 'Selling Your Business?',   href: '#sellers' },
-  { label: 'Working as a Broker?',     href: '#brokers' },
-  { label: 'Interested in Investing?', href: '#investors' },
-  { label: 'Know Us Personally?',      href: '#network' },
+  { label: 'Selling Your Business?', href: '#sellers' },
+  { label: 'Working as a Broker?',   href: '#brokers' },
+  { label: 'Know Us Personally?',    href: '#network' },
 ]
 
 export default function Hero() {

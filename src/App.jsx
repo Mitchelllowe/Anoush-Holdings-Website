@@ -6,7 +6,6 @@ import Thesis from './components/Thesis'
 import WhySellToUs from './components/WhySellToUs'
 import AcquisitionCriteria from './components/AcquisitionCriteria'
 import Process from './components/Process'
-import ForInvestors from './components/ForInvestors'
 import ForNetwork from './components/ForNetwork'
 import Founder from './components/Founder'
 import FAQ from './components/FAQ'
@@ -26,7 +25,6 @@ export default function App() {
         <WhySellToUs />     {/* Seller value props — flows from Thesis */}
         <AcquisitionCriteria /> {/* For Brokers — #brokers */}
         <Process />
-        <ForInvestors />    {/* For Investors — #investors */}
         <ForNetwork />      {/* For Friends & Family — #network */}
         <Founder />         {/* Team — #team */}
         <FAQ />

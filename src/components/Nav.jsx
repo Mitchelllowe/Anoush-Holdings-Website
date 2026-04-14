@@ -6,7 +6,6 @@ import { siteConfig } from '../site.config'
 const links = [
   { label: 'Selling?',  href: '#sellers' },
   { label: 'Brokers',   href: '#brokers' },
-  { label: 'Investors', href: '#investors' },
   { label: 'Team',      href: '#team' },
   { label: 'FAQ',       href: '#faq' },
   { label: 'Contact',   href: '#contact' },
