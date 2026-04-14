@@ -16,7 +16,7 @@ export const siteConfig = {
   hero: {
     headline: 'We buy and operate great small businesses.',
     subhead:
-      "Anoush Holdings is a values-driven acquisition company. We buy and operate great small businesses — and we're looking for our next one: a cash-flowing business in services, manufacturing, or trades whose owner is ready for a buyer who will run it right.",
+      "Anoush Holdings exists to prove that good values are not a drag. They are good business. We buy and operate companies that are good for employees, good for their communities, and built to deliver for investors.",
   },
 
   // ─── Track Record ────────────────────────────────────────────────────────
