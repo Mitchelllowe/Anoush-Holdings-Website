@@ -14,7 +14,7 @@ export const siteConfig = {
 
   // ─── Hero ────────────────────────────────────────────────────────────────
   hero: {
-    headline: 'We buy and operate great small businesses.',
+    headline: 'Ownership built on more than returns.',
     subhead:
       "Anoush Holdings exists to prove that good values are not a drag. They are good business. We buy and operate companies that are good for employees, good for their communities, and built to deliver for investors.",
   },
@@ -60,6 +60,7 @@ export const siteConfig = {
       bio: [
         'Mitch Lowe is a co-founder of Anoush Holdings and will be the owner-operator of the business Anoush Holdings acquires. He is a U.S. Army veteran, a West Point graduate, and is currently pursuing an MBA at Harvard Business School.',
         'Mitch spent five years as an Army Engineer Officer stationed at Fort Carson with the 4th Engineer Battalion. During that time, he co-founded Anoush Holdings as a real estate holding company, teaching himself deal sourcing, structuring, and property management from the ground up. The experience gave him a hands-on foundation in what it actually takes to find, buy, and run an asset for the long term.',
+        'Before acquiring an operating business, Mitch raised capital from investors, managed assets directly, and returned the fund at 3.5x in roughly three years. Every investor was made whole. That same accountability and discipline is what he will bring to your business.',
         'After leaving the Army, Mitch joined C Speed, a radar engineering firm that was acquired by NewSpring Capital. Working inside a PE-backed business gave him a firsthand look at how acquisitions work from the inside, and reinforced his conviction that most good small businesses deserve a better outcome than a financial buyer looking for a quick return.',
         'Today, Mitch is focused full-time on acquiring and operating great businesses. He is not a fund manager or a passive investor. He shows up, learns how the business actually runs, works alongside the team, and takes responsibility for outcomes. Mitch will be on site, in the business, and accountable for what happens next.',
         'Mitch lives with his wife Katie and their two daughters.',
