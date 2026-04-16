@@ -58,7 +58,7 @@ export const siteConfig = {
       linkedin: 'https://www.linkedin.com/in/mitch-b-lowe/',
       email: 'mlowe@anoushholdings.com',
       bio: [
-        'Mitch Lowe is a co-founder of Anoush Holdings and will be the owner-operator of the business Anoush Holdings acquires. He is a U.S. Army veteran, a West Point graduate, and is currently pursuing an MBA at Harvard Business School.',
+        'Mitch Lowe is a co-founder of Anoush Holdings and will be the owner-operator of the business Anoush Holdings acquires. He is a U.S. Army veteran, a West Point graduate, and is currently pursuing an MBA at Harvard Business School, where he led external affairs for the Christian Fellowship club.',
         'Mitch spent five years as an Army Engineer Officer stationed at Fort Carson with the 4th Engineer Battalion. During that time, he co-founded Anoush Holdings as a real estate holding company, teaching himself deal sourcing, structuring, and property management from the ground up. The experience gave him a hands-on foundation in what it actually takes to find, buy, and run an asset for the long term.',
         'Before acquiring an operating business, Mitch raised capital from investors, managed assets directly, and returned the fund at 3.5x in roughly three years. Every investor was made whole. That same accountability and discipline is what he will bring to your business.',
         'After leaving the Army, Mitch joined C Speed, a radar engineering firm that was acquired by NewSpring Capital. Working inside a PE-backed business gave him a firsthand look at how acquisitions work from the inside, and reinforced his conviction that most good small businesses deserve a better outcome than a financial buyer looking for a quick return.',
