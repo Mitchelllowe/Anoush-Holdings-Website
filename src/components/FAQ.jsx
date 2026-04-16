@@ -3,54 +3,29 @@ import { useState } from 'react'
 // To add/edit questions: update the faqs array below.
 
 const faqs = [
-  // ── Sellers & Brokers ──────────────────────────────────────────────────
   {
-    q: 'How are you financing acquisitions?',
-    a: "Acquisitions are structured with a combination of equity from our investor network and debt financing. We've had direct conversations with both SBA lenders and cash-flow lenders and have pre-qualification in place, so we're not starting from scratch when a deal comes together. Every transaction is structured deal by deal, and we're straightforward about that from the start.",
+    q: 'What happens to my employees after you buy?',
+    a: "Your team is the reason the business works. We're not coming in to cut headcount or reorganize things to hit a margin target. Mitch will be in the building, learning from your people, working alongside them. The measure of a good acquisition isn't just the financials. It's whether the people who were there before the sale still want to be there a year after it.",
   },
   {
-    q: 'Are you a real buyer or a broker?',
-    a: "We are a direct buyer. We are not a broker, intermediary, or roll-up aggregator. When you submit a deal to us, you're talking directly to the person who would own and operate the business. We do not shop deals to other buyers.",
+    q: 'Why should I trust you with something I spent 30 years building?',
+    a: "Honestly, you shouldn't trust us yet. Trust is earned. What we can tell you is that Mitch will be the owner-operator, personally accountable for what comes next. There's no fund timeline pushing us toward a flip. We take stewardship seriously, not as a pitch, but as a genuine responsibility. The best thing we can do is show up the way we say we will, and let that speak for itself.",
   },
   {
-    q: 'Do I need a broker to work with you?',
-    a: "No. We work directly with sellers and welcome no-broker conversations. That said, if you already have a broker or advisor involved, we're happy to work with them too.",
+    q: 'What makes you different from a private equity firm?',
+    a: "PE firms answer to a fund with a timeline. We answer to the business. No management fees, no portfolio of companies competing for our attention, and no exit strategy written into the deal at closing. We're buying a business to run it, not to package it for the next buyer.",
   },
   {
-    q: 'What industries are you interested in?',
-    a: "We're industry-agnostic within services, light manufacturing, specialty distribution, and trades. We're most drawn to businesses with recurring or repeat revenue, a stable customer base, and a team in place.",
+    q: 'What if I care about more than just the price?',
+    a: "Most of the sellers we respect do. If the legacy of your name matters, if you want your customers and your people to have real continuity after you leave, we're the right conversation to have. A number on a term sheet isn't the only thing on the table.",
   },
   {
-    q: 'How do you handle confidentiality?',
-    a: "We take confidentiality seriously. We sign a mutual NDA early in the process and do not share any information about your business with third parties without your explicit permission. We also avoid contacting your employees or customers without your prior approval.",
-  },
-  {
-    q: 'How long does the process typically take?',
-    a: 'From first call to close typically ranges from 60 to 120 days depending on deal complexity and financing. We aim to be efficient and respectful of your time. Every step in our process has a clear purpose.',
+    q: 'How do you finance acquisitions?',
+    a: "A combination of equity from our investor network and debt financing. We've done the pre-work with SBA and cash-flow lenders so we're not starting from scratch when a deal comes together. Every structure is deal-specific and we're upfront about that from day one.",
   },
   {
     q: "What if I'm not ready to sell yet?",
-    a: "That's completely fine. Many of our best conversations happen with owners who are 12–24 months out from a transition. Getting to know each other early makes the eventual process much smoother. Reach out whenever you're ready to start a conversation.",
-  },
-
-  // ── Investors ──────────────────────────────────────────────────────────
-  {
-    q: 'How is Fund II structured?',
-    a: "Fund II operates as a fundless sponsor — investors co-invest deal-by-deal in a specific, identified acquisition rather than committing to a blind pool. You see the business before you commit capital.",
-  },
-  {
-    q: 'Is there a management fee?',
-    a: "No. There is no management fee of any kind — not on committed capital, not on invested capital. We earn our return when you earn yours.",
-  },
-  {
-    q: 'Who can participate in Fund II?',
-    a: "Fund II is open to accredited investors. We are selective about who we bring on as LPs — we are looking for aligned, patient partners, not passive capital. Reach out to start a conversation.",
-  },
-
-  // ── Network ────────────────────────────────────────────────────────────
-  {
-    q: "I know someone who might be a good fit — how should I make an introduction?",
-    a: "The easiest way is to cc both parties on an email, or just send a note to mlowe@anoushholdings.com with a brief description of who you're connecting us with. We'll take it from there and make it easy on everyone.",
+    a: "No problem at all. Some of our best conversations have been with owners who are a year or two out. Getting to know each other early makes the whole process easier when the time comes. Reach out whenever it feels right.",
   },
 ]
 
