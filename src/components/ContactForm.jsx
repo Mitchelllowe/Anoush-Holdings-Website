@@ -9,11 +9,11 @@ const contactTypes = [
 ]
 
 const notesPlaceholder = {
-  seller:       'Tell us about your business — industry, years in operation, reason for considering a sale, anything else relevant…',
+  seller:       'Tell me about your business — industry, years in operation, reason for considering a sale, anything else relevant…',
   broker:       'Brief deal overview — industry, revenue range, location, seller situation, your timeline…',
-  investor:     'Tell us a bit about yourself and your investment background. No pitch deck needed — just a conversation.',
-  introduction: 'Who are you connecting us with, and why do you think there might be a fit?',
-  '':           'Tell us whatever feels relevant…',
+  investor:     'Tell me a bit about yourself and your investment background. No pitch deck needed — just a conversation.',
+  introduction: 'Who are you connecting me with, and why do you think there might be a fit?',
+  '':           'Tell me whatever feels relevant…',
 }
 
 const empty = { type: '', name: '', email: '', company: '', location: '', ebitda: '', notes: '' }
@@ -97,7 +97,7 @@ export default function ContactForm() {
         <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">Contact</p>
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Get in touch.</h2>
         <p className="text-slate-600 mb-10">
-          All information is kept strictly confidential. You can also reach us directly at{' '}
+          All information is kept strictly confidential. You can also reach me directly at{' '}
           <a href={`mailto:${siteConfig.email}`} className="text-blue-600 hover:underline">
             {siteConfig.email}
           </a>
@@ -111,8 +111,8 @@ export default function ContactForm() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">We got it. Thank you.</h3>
-            <p className="text-slate-600">We'll be in touch shortly.</p>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">I got it. Thank you.</h3>
+            <p className="text-slate-600">I'll be in touch shortly.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} noValidate className="space-y-5">
@@ -202,7 +202,7 @@ export default function ContactForm() {
               </>
             )}
 
-            <Field label="Tell us more" id="notes">
+            <Field label="Tell me more" id="notes">
               <textarea
                 id="notes"
                 name="notes"
@@ -216,7 +216,7 @@ export default function ContactForm() {
 
             {serverError && (
               <p className="text-sm text-red-600">
-                Something went wrong. Please try again or email us directly at{' '}
+                Something went wrong. Please try again or email me directly at{' '}
                 <a href={`mailto:${siteConfig.email}`} className="underline">{siteConfig.email}</a>.
               </p>
             )}

@@ -14,9 +14,9 @@ export const siteConfig = {
 
   // ─── Hero ────────────────────────────────────────────────────────────────
   hero: {
-    headline: 'Ownership built on more than returns.',
+    headline: 'Buying exceptional Main Street businesses in the continental U.S.',
     subhead:
-      "Anoush Holdings exists to prove that good values are not a drag. They are good business. We buy and operate companies that are good for employees, good for their communities, and built to deliver for investors.",
+      "My mission is to buy great local businesses, protect the people who make them special, and grow them for the years ahead. I'm not here to flip. I'm here to preserve the legacy founders spent years building and create opportunity for the people who helped them build it.",
   },
 
   // ─── Track Record ────────────────────────────────────────────────────────
@@ -58,12 +58,12 @@ export const siteConfig = {
       linkedin: 'https://www.linkedin.com/in/mitch-b-lowe/',
       email: 'mlowe@anoushholdings.com',
       bio: [
-        'Mitch Lowe is a co-founder of Anoush Holdings and will be the owner-operator of the business Anoush Holdings acquires. He is a U.S. Army veteran, a West Point graduate, and is currently pursuing an MBA at Harvard Business School, where he leads external affairs for the Christian Fellowship club.',
-        'Mitch spent five years as an Army Engineer Officer stationed at Fort Carson with the 4th Engineer Battalion. During that time, he co-founded Anoush Holdings as a real estate holding company, teaching himself deal sourcing, structuring, and property management from the ground up. The experience gave him a hands-on foundation in what it actually takes to find, buy, and run an asset for the long term.',
-        'Before acquiring an operating business, Mitch raised capital from investors, managed assets directly, and returned the fund at 3.5x in roughly three years. Every investor was made whole. That same accountability and discipline is what he will bring to your business.',
-        'After leaving the Army, Mitch joined C Speed, a radar engineering firm that was acquired by NewSpring Capital. Working inside a PE-backed business gave him a firsthand look at how acquisitions work from the inside, and reinforced his conviction that most good small businesses deserve a better outcome than a financial buyer looking for a quick return.',
-        'Today, Mitch is focused full-time on acquiring and operating great businesses. He is not a fund manager or a passive investor. He shows up, learns how the business actually runs, works alongside the team, and takes responsibility for outcomes. Mitch will be on site, in the business, and accountable for what happens next.',
-        'Mitch lives with his wife Katie and their two daughters.',
+        "I'm the co-founder of Anoush Holdings, and I'll be the hands-on owner-operator of the business I acquire. I'm a West Point graduate, a U.S. Army veteran, and I'm currently pursuing my MBA at Harvard Business School, where I lead external affairs for the Christian Fellowship club.",
+        'I spent five years as an Army Engineer Officer at Fort Carson with the 4th Engineer Battalion. During that time I founded Anoush Holdings as a real estate investment firm, teaching myself how to source deals, structure them, raise capital, and manage property from the ground up.',
+        'That first fund was real estate. I raised capital from a network of investors, bought and managed the assets directly, and returned the fund at 3.5x in about three years — with every investor made whole. It taught me what it takes to be accountable for other people’s money and to run an asset well over the long term. That is the same discipline I will bring to your business.',
+        'After the Army, I joined C Speed, a radar engineering firm later acquired by NewSpring Capital. Working inside a private-equity-backed business showed me how acquisitions really play out from the inside — and convinced me that most good small businesses deserve a better outcome than a financial buyer chasing a quick exit.',
+        "Today I'm focused full-time on buying and operating one great business. I'm not a fund manager or a passive investor. I'll be on site, learning how the business actually runs, working alongside your team, and personally accountable for what comes next.",
+        'I live with my wife Katie and our two daughters.',
       ],
     },
     {

@@ -2,7 +2,7 @@ const steps = [
   {
     number: '01',
     title: 'Submit a Deal',
-    description: 'Fill out our short form or reach out directly. No deck or financials required at this stage.',
+    description: 'Fill out the short form or reach out directly. No deck or financials required at this stage.',
     timeline: 'Day 1',
   },
   {
@@ -14,25 +14,25 @@ const steps = [
   {
     number: '03',
     title: 'NDA + Info Request',
-    description: 'We sign a mutual NDA and request a light info package: a few years of P&Ls and a basic overview.',
+    description: 'I sign a mutual NDA and request a light info package: a few years of P&Ls and a basic overview.',
     timeline: 'Week 1–2',
   },
   {
     number: '04',
     title: 'Letter of Intent',
-    description: "If there's a fit, we deliver a clean, clear LOI with our offer terms. No games, no lowballs.",
+    description: "If there's a fit, I deliver a clean, clear LOI with my offer terms. No games, no lowballs.",
     timeline: 'Weeks 2–4',
   },
   {
     number: '05',
     title: 'Diligence',
-    description: 'We move quickly and respectfully. We aim to minimize disruption to your day-to-day operations.',
+    description: 'I move quickly and respectfully. I aim to minimize disruption to your day-to-day operations.',
     timeline: '30–60 days',
   },
   {
     number: '06',
     title: 'Close',
-    description: 'We work with your attorney and ours to reach a clean close, then we get to work.',
+    description: 'I work with your attorney and mine to reach a clean close, then I get to work.',
     timeline: 'Day 60–90',
   },
 ]
@@ -41,12 +41,12 @@ export default function Process() {
   return (
     <section id="process" className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">Our Process</p>
+        <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">My Process</p>
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
           What to expect.
         </h2>
         <p className="text-slate-600 text-lg mb-14 max-w-2xl">
-          Sellers deserve a clear, respectful process. Here's how we typically work from first contact to close.
+          Sellers deserve a clear, respectful process. Here's how I typically work from first contact to close.
         </p>
 
         {/* Stepper */}

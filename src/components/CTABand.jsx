@@ -9,7 +9,7 @@ export default function CTABand() {
         </p>
         <h2 className="text-2xl sm:text-3xl font-bold mb-3">Have a business in mind?</h2>
         <p className="text-slate-300 text-base mb-6 max-w-sm mx-auto">
-          No commitment and no pressure. Tell us about the business and let's see if there's a fit.
+          No commitment and no pressure. Tell me about the business and let's see if there's a fit.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
