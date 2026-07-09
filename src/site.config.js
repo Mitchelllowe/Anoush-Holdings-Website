@@ -14,10 +14,10 @@ export const siteConfig = {
 
   // ─── Hero ────────────────────────────────────────────────────────────────
   hero: {
-    headline: 'Buying exceptional Main Street businesses in the continental U.S.',
+    headline: 'Buying exceptional Main Street businesses.',
     highlight: 'Main Street', // rendered in the accent color within the headline
     subhead:
-      "My mission is to buy great local businesses, protect the people who make them special, and grow them for the years ahead. I'm not here to flip. I'm here to preserve the legacy founders spent years building and create opportunity for the people who helped them build it.",
+      "Our mission is to buy great local businesses, protect the people who make them special, and grow them for the years ahead. We're not here to flip. We're here to preserve the legacy founders spent years building and create opportunity for the people who helped them build it.",
   },
 
   // ─── Track Record ────────────────────────────────────────────────────────
@@ -59,12 +59,12 @@ export const siteConfig = {
       linkedin: 'https://www.linkedin.com/in/mitch-b-lowe/',
       email: 'mlowe@anoushholdings.com',
       bio: [
-        "I'm the co-founder of Anoush Holdings, and I'll be the hands-on owner-operator of the business I acquire. I'm a West Point graduate, a U.S. Army veteran, and I'm currently pursuing my MBA at Harvard Business School, where I lead external affairs for the Christian Fellowship club.",
-        'I spent five years as an Army Engineer Officer at Fort Carson with the 4th Engineer Battalion. During that time I founded Anoush Holdings as a real estate investment firm, teaching myself how to source deals, structure them, raise capital, and manage property from the ground up.',
-        'That first fund was real estate. I raised capital from a network of investors, bought and managed the assets directly, and returned the fund at 3.5x in about three years — with every investor made whole. It taught me what it takes to be accountable for other people’s money and to run an asset well over the long term. That is the same discipline I will bring to your business.',
-        'After the Army, I joined C Speed, a radar engineering firm later acquired by NewSpring Capital. Working inside a private-equity-backed business showed me how acquisitions really play out from the inside — and convinced me that most good small businesses deserve a better outcome than a financial buyer chasing a quick exit.',
-        "Today I'm focused full-time on buying and operating one great business. I'm not a fund manager or a passive investor. I'll be on site, learning how the business actually runs, working alongside your team, and personally accountable for what comes next.",
-        'I live with my wife Katie and our two daughters.',
+        'Mitch Lowe is the Co-Founder and Operator of Anoush Holdings, and will be the hands-on owner-operator of the business it acquires. He is a West Point graduate, a U.S. Army veteran, and is currently pursuing his MBA at Harvard Business School, where he leads external affairs for the Christian Fellowship club.',
+        'He spent five years as an Army Engineer Officer at Fort Carson with the 4th Engineer Battalion. During that time he founded Anoush Holdings as a real estate investment firm, teaching himself how to source deals, structure them, raise capital, and manage property from the ground up.',
+        'That first fund was real estate. He raised capital from a network of investors, bought and managed the assets directly, and returned the fund at 3.5x in about three years — with every investor made whole. It taught him what it takes to be accountable for other people’s money and to run an asset well over the long term. That is the same discipline he will bring to your business.',
+        'After the Army, he joined C Speed, a radar engineering firm later acquired by NewSpring Capital. Working inside a private-equity-backed business showed him how acquisitions really play out from the inside — and convinced him that most good small businesses deserve a better outcome than a financial buyer chasing a quick exit.',
+        'Today he is focused full-time on buying and operating one great business. He is not a fund manager or a passive investor. He will be on site, learning how the business actually runs, working alongside your team, and personally accountable for what comes next.',
+        'He lives with his wife Katie and their two daughters.',
       ],
     },
     {
@@ -75,9 +75,9 @@ export const siteConfig = {
       email: 'aavedisian@anoushholdings.com',
       bio: [
         'Art Avedisian is the Co-Founder and Limited Partner of Anoush Holdings. He brings more than three decades of experience building, leading, and scaling businesses across healthcare technology, financial services, and aerospace and defense.',
-        'Art began his career in medical device product development at Welch Allyn before taking the helm as President of Cowley Associates, a boutique advertising and public relations firm. He went on to co-found LifeLink Monitoring, serving as President and CEO, where he built the company from the ground up into a remote patient monitoring service provider that focused on at-risk, chronically ill patients. That experience gave him a deep understanding of what it takes to operate a technology business through every stage of growth.',
-        "He later founded and led Cygma Corp, a subsidiary of Chatham Financial, one of the largest independent financial risk advisory firms in the world, where he built out the derivatives business across Latin America and other developing markets. His work there sharpened his expertise in deal structuring, capital markets, and operating in complex environments. Most recently, Art served as EVP of Strategic Initiatives at C Speed where he led the development of the company's persistent airborne surveillance business and ultimately, C Speed's sale to NewSpring Holdings.",
-        'Outside of his professional career, Art is a private pilot and serves on the board of ServingLeaders Ministries, reflecting a long-standing commitment to faith, service, and community.',
+        'Art began his career in medical device product development at Welch Allyn before taking the helm as President of Cowley Associates, a boutique advertising and public relations firm. He went on to co-found LifeLink Monitoring, serving as President and CEO, where he built the company from the ground up into a remote patient monitoring service provider that focused on at-risk, chronically ill patients. That experience gave him a deep understanding of what it takes to build and operate a technology business through every stage of growth.',
+        "He later served as global head of business innovation for Chatham Financial, one of the largest independent financial risk advisory firms in the world. There he founded and led Cygma Corp, where he built out the emerging markets derivatives business across Latin America and other developing markets. These experiences sharpened his expertise in deal structuring, capital markets, and operating in complex environments. Most recently, Art served as a managing partner and EVP of Strategic Initiatives at C Speed where he led the development of the company's persistent airborne surveillance business and ultimately, C Speed's sale to NewSpring Holdings.",
+        'Outside of his professional career, Art is a private pilot and serves on the boards of ServingLeaders Ministries and the local high school hockey club, reflecting a long-standing commitment to faith, service, and community.',
         'Art lives in Kennett Square, PA with his wife Tina and their six children.',
       ],
     },
