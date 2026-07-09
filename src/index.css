@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-blue-50: #eef5f5;
-  --color-blue-100: #d0e6e6;
-  --color-blue-400: #236666;
-  --color-blue-600: #1a4a4a;
-  --color-blue-700: #133838;
+  /* Serif typeface — matches the site's brand mark (see index.html Google Fonts link) */
+  --font-sans: "Lora", ui-serif, Georgia, "Times New Roman", serif;
+
+  /* Accent palette — sage/forest green pulled from the brand image.
+     The codebase references these as `blue-*`; the values are green. */
+  --color-blue-50: #edf5f0;
+  --color-blue-100: #d4e8dd;
+  --color-blue-400: #6aa886;
+  --color-blue-500: #4f9070;
+  --color-blue-600: #3f7a5d;
+  --color-blue-700: #335f49;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lora", ui-serif, Georgia, "Times New Roman", serif;
 }

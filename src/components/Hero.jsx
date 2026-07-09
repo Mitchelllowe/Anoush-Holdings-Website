@@ -3,11 +3,20 @@ import { siteConfig } from '../site.config'
 // To edit headline/subhead: update siteConfig.hero in site.config.js
 
 export default function Hero() {
+  const { headline, highlight } = siteConfig.hero
+  // Split the headline so the highlighted phrase can be rendered in the accent color.
+  const parts = highlight ? headline.split(highlight) : [headline]
+
   return (
-    <section className="bg-slate-900 text-white pt-32 pb-24 px-4 sm:px-6">
+    <section className="bg-slate-900 text-[#f2efe6] pt-32 pb-24 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
-          {siteConfig.hero.headline}
+          {parts.map((part, i) => (
+            <span key={i}>
+              {part}
+              {i < parts.length - 1 && <span className="text-blue-400">{highlight}</span>}
+            </span>
+          ))}
         </h1>
         <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
           {siteConfig.hero.subhead}

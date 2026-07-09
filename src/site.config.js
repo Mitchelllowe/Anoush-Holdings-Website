@@ -15,6 +15,7 @@ export const siteConfig = {
   // ─── Hero ────────────────────────────────────────────────────────────────
   hero: {
     headline: 'Buying exceptional Main Street businesses in the continental U.S.',
+    highlight: 'Main Street', // rendered in the accent color within the headline
     subhead:
       "My mission is to buy great local businesses, protect the people who make them special, and grow them for the years ahead. I'm not here to flip. I'm here to preserve the legacy founders spent years building and create opportunity for the people who helped them build it.",
   },
