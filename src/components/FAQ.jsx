@@ -24,6 +24,10 @@ const faqs = [
     a: "A combination of equity from our investor network and debt financing. We've done the pre-work with SBA and cash-flow lenders so we're not starting from scratch when a deal comes together. Every structure is deal-specific and we're upfront about that from day one.",
   },
   {
+    q: 'What if my financials are a mess?',
+    a: 'No problem. Send us what you have. We can reconstruct financials from just bank statements if needed.',
+  },
+  {
     q: "What if I'm not ready to sell yet?",
     a: "No problem at all. Some of our best conversations have been with owners who are a year or two out. Getting to know each other early makes the whole process easier when the time comes. Reach out whenever it feels right.",
   },
