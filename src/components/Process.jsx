@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const steps = [
   {
     number: '01',
@@ -14,30 +16,61 @@ const steps = [
   {
     number: '03',
     title: 'NDA + Info Request',
-    description: 'We sign a mutual NDA and request a light info package: a few years of P&Ls and a basic overview.',
-    timeline: 'Week 1–2',
+    description: 'We sign a mutual NDA, then request a short, standard info package so we can move quickly. The full checklist is below.',
+    timeline: 'Day 5',
   },
   {
     number: '04',
     title: 'Letter of Intent',
     description: "If there's a fit, we deliver a clean, clear LOI with our offer terms. No games, no lowballs.",
-    timeline: 'Weeks 2–4',
+    timeline: 'Days 20–30',
   },
   {
     number: '05',
     title: 'Diligence',
     description: 'We move quickly and respectfully. We aim to minimize disruption to your day-to-day operations.',
-    timeline: '30–60 days',
+    timeline: 'Days 30–90',
   },
   {
     number: '06',
     title: 'Close',
     description: 'We work with your attorney and ours to reach a clean close, then we get to work.',
-    timeline: 'Day 60–90',
+    timeline: 'Days 90–120',
+  },
+]
+
+// Info package requested in Step 03 (after the mutual NDA).
+// Each item includes a short note on how to pull it from QuickBooks.
+const infoRequest = [
+  {
+    item: '5 years of Profit & Loss statements',
+    how: 'QuickBooks: Reports → "Profit and Loss" → set the period to each of the last 5 years (or one range with columns by Year), then Export.',
+  },
+  {
+    item: '5 years of Balance Sheets, as of January 1',
+    how: 'QuickBooks: Reports → "Balance Sheet" → set the "as of" date to January 1 for each of the last 5 years, then Export.',
+  },
+  {
+    item: '5 years of business tax returns',
+    how: 'From your accountant, or the federal returns you filed (Form 1120, 1120-S, or Schedule C) for each year.',
+  },
+  {
+    item: '5 years of revenue by customer (anonymized is fine)',
+    how: 'QuickBooks: Reports → "Sales by Customer Summary" → run one year at a time, then Export. You can relabel customers as A, B, C.',
+  },
+  {
+    item: '5 years of cost by vendor (anonymized is fine)',
+    how: 'QuickBooks: Reports → "Expenses by Vendor Summary" → run one year at a time, then Export. Vendor names can be relabeled the same way.',
+  },
+  {
+    item: 'A rough staff breakdown by role (anonymized is fine)',
+    how: 'A simple list is all we need. For example: "18 technicians, 4 sales reps, 2 estimators, 1 office manager." No names or org chart required.',
   },
 ]
 
 export default function Process() {
+  const [showInfo, setShowInfo] = useState(false)
+
   return (
     <section id="process" className="py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-6xl mx-auto">
@@ -64,6 +97,55 @@ export default function Process() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Info request callout — the detail behind Step 03 (collapsible, centered) */}
+        <div className="mt-12 mx-auto max-w-2xl rounded-2xl bg-blue-50 border border-blue-100 p-6 sm:p-8">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div>
+              <p className="text-xs text-blue-600 font-medium tracking-widest uppercase">Step 03: After the NDA</p>
+              <h3 className="text-lg font-bold text-slate-900">What we'll ask for</h3>
+            </div>
+          </div>
+          <p className="text-slate-600 text-sm">
+            Once a mutual NDA is signed, here is the exact package we request. Most of it pulls straight from QuickBooks in a few clicks:
+          </p>
+          <button
+            type="button"
+            onClick={() => setShowInfo(!showInfo)}
+            aria-expanded={showInfo}
+            className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+          >
+            {showInfo ? 'Hide the checklist' : 'Show the checklist'}
+            <svg
+              className={`w-4 h-4 transition-transform duration-200 ${showInfo ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {showInfo && (
+            <ul className="space-y-4 mt-5">
+              {infoRequest.map(({ item, how }) => (
+                <li key={item} className="flex items-start gap-3">
+                  <svg className="flex-shrink-0 w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900">{item}</p>
+                    <p className="text-sm text-slate-600 mt-0.5 leading-relaxed">{how}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </section>

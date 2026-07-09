@@ -43,7 +43,7 @@ const cards = [
 
 export default function WhySellToUs() {
   return (
-    <section id="values" className="py-20 px-4 sm:px-6 bg-slate-50">
+    <section id="values" className="py-20 px-4 sm:px-6 bg-blue-50">
       <div className="max-w-6xl mx-auto">
         <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">Why Sell to Us</p>
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-12">

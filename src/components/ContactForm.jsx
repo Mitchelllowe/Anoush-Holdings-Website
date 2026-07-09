@@ -92,7 +92,7 @@ export default function ContactForm() {
   const showBizFields = form.type === 'seller' || form.type === 'broker'
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 bg-white">
+    <section id="contact" className="py-20 px-4 sm:px-6 bg-slate-50">
       <div className="max-w-2xl mx-auto">
         <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-3">Contact</p>
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Get in touch.</h2>
