@@ -17,7 +17,7 @@ export const siteConfig = {
     headline: 'Buying exceptional Main Street businesses.',
     highlight: 'Main Street', // rendered in the accent color within the headline
     subhead:
-      "Our mission is to buy great local businesses, protect the people who make them special, and grow them for the years ahead. We're not here to flip. We're here to preserve the legacy founders spent years building and create opportunity for the people who helped them build it.",
+      "Our mission is to buy great local businesses, protect the people who make them special, and grow them for the years ahead.",
   },
 
   // ─── Track Record ────────────────────────────────────────────────────────
@@ -80,6 +80,34 @@ export const siteConfig = {
         'Outside of his professional career, Art is a private pilot and serves on the boards of ServingLeaders Ministries and the local high school hockey club, reflecting a long-standing commitment to faith, service, and community.',
         'Art lives in Kennett Square, PA with his wife Tina and their six children.',
       ],
+    },
+  ],
+
+  // ─── Interns ─────────────────────────────────────────────────────────────
+  interns: [
+    {
+      name: 'Cole Stepanik',
+      title: 'Investment Intern',
+      photo: '/cole.jpg',
+      school: 'University of Massachusetts Lowell',
+      major: 'Finance & Accounting',
+      classYear: '2027',
+    },
+    {
+      name: 'Alessio Vaccaro',
+      title: 'Investment Intern',
+      photo: '/alessio.jpg',
+      school: 'Elon University',
+      major: 'Finance',
+      classYear: '2029',
+    },
+    {
+      name: 'Raahul Venkatesan',
+      title: 'Investment Intern',
+      photo: '/raahul.jpg',
+      school: 'Indiana University',
+      major: 'Finance & Accounting',
+      classYear: '2028',
     },
   ],
 }

@@ -87,7 +87,50 @@ function TeamMember({ member }) {
   )
 }
 
+function InternCard({ intern }) {
+  const initials = intern.name
+    .split(' ')
+    .map((n) => n[0])
+    .join('')
+
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex items-center gap-4">
+        {intern.photo ? (
+          <img
+            src={intern.photo}
+            alt={intern.name}
+            className="flex-shrink-0 w-14 h-14 rounded-full object-cover object-top"
+          />
+        ) : (
+          <div className="flex-shrink-0 w-14 h-14 rounded-full bg-slate-200 flex items-center justify-center">
+            <span className="text-lg font-bold text-slate-400">{initials}</span>
+          </div>
+        )}
+        <div className="min-w-0">
+          <h4 className="font-bold text-slate-900 leading-tight">{intern.name}</h4>
+          <p className="text-slate-500 text-sm">{intern.title}</p>
+        </div>
+      </div>
+      <div className="mt-4 space-y-0.5">
+        {intern.school && (
+          <p className="text-slate-700 text-sm font-medium">{intern.school}</p>
+        )}
+        {(intern.major || intern.classYear) && (
+          <p className="text-slate-500 text-sm">
+            {[intern.major, intern.classYear && `Class of ${intern.classYear}`]
+              .filter(Boolean)
+              .join(' · ')}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function Founder() {
+  const interns = siteConfig.interns || []
+
   return (
     <section id="team" className="py-20 px-4 sm:px-6 bg-slate-50">
       <div className="max-w-4xl mx-auto">
@@ -100,6 +143,16 @@ export default function Founder() {
             <TeamMember key={member.name} member={member} />
           ))}
         </div>
+
+        {interns.length > 0 && (
+          <div className="mt-6">
+            <div className="grid sm:grid-cols-3 gap-5">
+              {interns.map((intern, i) => (
+                <InternCard key={intern.name + i} intern={intern} />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )
