@@ -54,7 +54,7 @@ export const siteConfig = {
   team: [
     {
       name: 'Mitch Lowe',
-      title: 'Co-Founder and Operator',
+      title: 'Co-Founder and Managing Partner',
       photo: '/mitch-lowe.jpg',
       linkedin: 'https://www.linkedin.com/in/mitch-b-lowe/',
       email: 'mlowe@anoushholdings.com',
